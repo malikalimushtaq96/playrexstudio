@@ -14,6 +14,8 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
     <!-- Custom CSS -->
     <link href="assets/css/style.css" rel="stylesheet">
+    <!-- Google reCAPTCHA -->
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
 </head>
 
 <body>
@@ -65,6 +67,11 @@
                         <div class="invalid-feedback">Please enter your message.</div>
                     </div>
 
+                    <!-- Google reCAPTCHA -->
+                        <div class="mb-3">
+                            <div class="g-recaptcha" data-sitekey="6LevzT0sAAAAAPVOrQdpjlOQVZ02XYp0oFiaLClF"></div>
+                        </div>
+
                     <button type="submit" class="btn fw-bold w-100"
                         style="background-color: #f7d208; color: black;">Send</button>
                 </form>
@@ -108,23 +115,10 @@
             </div>
         </div>
     </footer>
-
-    <!-- Contact Form Validation Script -->
-    <script>
-        (function () {
-            const form = document.getElementById('contactForm');
-            form.addEventListener('submit', function (event) {
-                if (!form.checkValidity()) {
-                    event.preventDefault();
-                    event.stopPropagation();
-                }
-                form.classList.add('was-validated');
-            }, false);
-        })();
-    </script>
-
     <!-- Bootstrap 5 JS Bundle with Popper -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script src="assets/js/contact-form.js"></script>
 </body>
 
 </html>
