@@ -6,148 +6,255 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Playrex Studio - Home</title>
     <link rel="icon" type="image/x-icon" href="assets/images/playrex-favicon.ico">
-
     <!-- Bootstrap 5 CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-
     <!-- Roboto Font -->
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
-
     <!-- FontAwesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
-
     <!-- Flickity -->
     <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
-
     <!-- Custom CSS -->
     <link href="assets/css/style.css" rel="stylesheet">
-
-    <!-- Google reCAPTCHA -->
-    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
 </head>
 
 <body>
-
     <!-- Navigation Bar -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark joysticks-bg">
         <div class="container">
+            <!-- Logo on left -->
             <a class="navbar-brand" href="index.html">
                 <img src="assets/images/logo.png" alt="PLAYREX STUDIO" height="75">
             </a>
 
+            <!-- Mobile Toggler Button -->
             <button class="navbar-toggler border-0" type="button" data-bs-toggle="offcanvas"
                 data-bs-target="#mobileMenu">
                 <span class="fa-solid fa-bars"></span>
             </button>
 
+            <!-- Desktop Menu -->
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto">
-                    <li class="nav-item"><a class="nav-link" href="#about">ABOUT</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#games">GAMES</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#contact">CONTACT</a></li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">ABOUT</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#games">GAMES</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">CONTACT</a>
+                    </li>
                 </ul>
             </div>
         </div>
     </nav>
 
-    <!-- Mobile Menu -->
+    <!-- Mobile Offcanvas Menu -->
     <div class="offcanvas offcanvas-start" tabindex="-1" id="mobileMenu">
         <div class="offcanvas-header joysticks-bg">
-            <img src="assets/images/logo.png" height="60">
-            <button class="btn-close text-reset" data-bs-dismiss="offcanvas"></button>
+            <img src="assets/images/logo.png" alt="PLAYREX STUDIO" height="60">
+            <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close">
+                <span class="fa-solid fa-xmark"></span>
+            </button>
         </div>
         <div class="offcanvas-body joysticks-bg">
             <ul class="navbar-nav">
-                <li class="nav-item"><a class="nav-link" href="#about">ABOUT</a></li>
-                <li class="nav-item"><a class="nav-link" href="#games">GAMES</a></li>
-                <li class="nav-item"><a class="nav-link" href="#contact">CONTACT</a></li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#about">ABOUT</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#games">GAMES</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#contact">CONTACT</a>
+                </li>
             </ul>
         </div>
     </div>
 
-    <!-- About -->
+    <!-- About-->
     <section id="about" class="py-5 bg-white">
         <div class="container">
             <div class="row g-5">
-                <div class="col-md-6 text-center">
-                    <img src="assets/images/playrex-favicon.ico" class="img-fluid">
+                <!-- Image or Studio Logo -->
+                <div class="col-md-6 mb-4 mb-md-0 text-center">
+                    <img src="assets/images/playrex-favicon.ico" class="img-fluid" alt="Our Studio">
                 </div>
+
+                <!-- Text Content -->
                 <div class="col-md-6">
                     <h2 class="mb-4">About Our Studio</h2>
                     <p class="lead">
-                        We are a passionate team of developers and designers dedicated to crafting immersive worlds.
+                        We are a passionate team of developers and designers dedicated to crafting immersive worlds and
+                        unforgettable gameplay
+                        experiences.
                     </p>
                     <p>
-                        From concept art to final polish, we bring bold ideas to life with creativity and precision.
+                        From concept art to final polish, our team of artists, coders, and storytellers work together to
+                        bring bold ideas to life. Whether it’s a fast-paced mobile game or a deep narrative-driven
+                        journey, we aim to push creative boundaries.
                     </p>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Games -->
+    <!-- Games-->
     <section id="games" class="py-5 bg-light">
         <h2 class="mb-4 text-center">Some of our Games</h2>
         <div class="container game-container">
-            <div class="carousel" data-flickity='{"wrapAround":true,"autoPlay":3000,"prevNextButtons":false}'>
-                <!-- (unchanged game cards here) -->
+            <div class="carousel" data-flickity='{
+           "wrapAround": true,
+           "autoPlay": 3000,
+           "prevNextButtons": false,
+           "cellAlign": "center",
+           "contain": true
+         }'>
+
+                <!-- Game Card 1 -->
+                <div class="carousel-cell">
+                    <div class="game-card">
+                        <div class="game-icon-wrapper">
+                            <img src="assets/images/games/barber-game-icon.png" alt="" />
+                        </div>
+                        <div class="game-info">
+                            <div class="game-title">Barber Shop Simulator</div>
+                            <div class="game-content">
+                                <div class="game-desc">
+                                    Do you want to be a well-known hair salon in the town?
+                                    Employ talented artists to please your clients!
+                                    Continue raising the expectations for your cutting standards and styles!
+                                    You can own the #1 saloon brand!
+                                    We offer hair-cutting services for men.
+                                    How to make cool fade cuts and shaves.
+                                </div>
+                                <a href="https://apps.apple.com/us/app/id6475964389" target="_blank">
+                                    <img src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg"
+                                        alt="Download on the App Store" class="appstore-badge">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Game Card 2 -->
+                <div class="carousel-cell">
+                    <div class="game-card">
+                        <div class="game-icon-wrapper">
+                            <img src="assets/images/games/supermarket-simulator-icon.png" alt="" />
+                        </div>
+                        <div class="game-info">
+                            <div class="game-title">Supermarket Cashier Simulator</div>
+                            <div class="game-content">
+                                <div class="game-desc">
+                                    Enter the exciting world of retail! Scan items, manage the register, and serve
+                                    customers in Supermarket Cashier Simulator — it’s fast-paced, fun, and totally
+                                    addictive!
+                                </div>
+                                <a href="https://apps.apple.com/app/id6479319845" target="_blank">
+                                    <img src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg"
+                                        alt="Download on the App Store" class="appstore-badge">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Game Card 3 -->
+                <div class="carousel-cell">
+                    <div class="game-card">
+                        <div class="game-icon-wrapper">
+                            <img src="assets/images/games/gym-simulator-icon.png" alt="" />
+                        </div>
+                        <div class="game-info">
+                            <div class="game-title">Fitness Gym Simulator</div>
+                            <div class="game-content">
+                                <div class="game-desc">
+                                    Would you like to be the most muscular individual in the gym? Come construct an
+                                    exclusive, opulent gym. Welcome to this game, a gym fitness simulator! Enter the
+                                    realm of bodybuilding and fitness. The gym is the ideal location to bulk up! Are you
+                                    prepared to run your vast gym business?
+                                </div>
+                                <a href="https://apps.apple.com/app/id6503940513" target="_blank">
+                                    <img src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg"
+                                        alt="Download on the App Store" class="appstore-badge">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
             </div>
-        </div>
     </section>
 
-    <!-- Contact -->
+
+    <!-- Contact Form -->
     <section id="contact">
         <div class="container py-5">
             <div class="row g-5">
-
+                <!-- Left side: Contact Form -->
                 <div class="col-md-6">
                     <h2 class="mb-4">Get in touch!</h2>
-
-                    <form id="contactForm"
-                          class="needs-validation"
-                          action="https://formsubmit.co/c07f078369e9a9798f7c88806c2e66af"
-                          method="POST"
-                          novalidate>
-
+                    <form id="contactForm" class="needs-validation"
+                        action="https://formsubmit.co/c07f078369e9a9798f7c88806c2e66af" method="POST" novalidate>
                         <input type="hidden" name="_captcha" value="false">
                         <input type="text" name="_honey" style="display:none">
 
                         <div class="form-floating mb-3">
-                            <input class="form-control" name="name" placeholder="Name" required>
-                            <label>Name</label>
+                            <input type="text" class="form-control" id="name" name="name" placeholder="Your Name"
+                                required>
+                            <label for="name">Name</label>
+                            <div class="invalid-feedback">Please enter your name.</div>
                         </div>
 
                         <div class="form-floating mb-3">
-                            <input type="email" class="form-control" name="email" placeholder="Email" required>
-                            <label>Email</label>
+                            <input type="email" class="form-control" id="email" name="email" placeholder="Your Email"
+                                required>
+                            <label for="email">Email</label>
+                            <div class="invalid-feedback">Please enter a valid email address.</div>
                         </div>
 
                         <div class="form-floating mb-3">
-                            <input class="form-control" name="subject" placeholder="Subject" required>
-                            <label>Subject</label>
+                            <input type="text" class="form-control" id="subject" name="subject" placeholder="Subject"
+                                required>
+                            <label for="subject">Subject</label>
+                            <div class="invalid-feedback">Please enter a subject.</div>
                         </div>
 
                         <div class="form-floating mb-3">
-                            <textarea class="form-control" name="message" style="height:245px" required></textarea>
-                            <label>Message</label>
+                            <textarea class="form-control" id="message" name="message" placeholder="Your Message"
+                                style="height: 245px; resize: none;" required></textarea>
+                            <label for="message">Message</label>
+                            <div class="invalid-feedback">Please enter your message.</div>
                         </div>
 
-                        <!-- Google reCAPTCHA -->
-                        <div class="mb-3">
-                            <div class="g-recaptcha" data-sitekey="6LevzT0sAAAAAPVOrQdpjlOQVZ02XYp0oFiaLClF"></div>
-                        </div>
-
-                        <button class="btn fw-bold w-100" style="background:#f7d208;color:black">
-                            Send
-                        </button>
+                        <button type="submit" class="btn fw-bold w-100"
+                            style="background-color: #f7d208; color: black;">Send</button>
                     </form>
                 </div>
 
+                <!-- Right side: Heading and text aligned to top -->
                 <div class="col-md-6">
                     <h3 class="mb-3">We'd Love to Hear From You</h3>
-                    <p class="lead">Have questions or feedback? We’re here to help.</p>
-                </div>
+                    <p class="lead">Have questions or feedback? Fill out the form and we’ll get back to you as soon as
+                        possible. We’re here to help!</p>
 
+                    <ul class="list-unstyled">
+                        <li class="mb-2">
+                            <p>
+                                <i class="fa-solid fa-envelope"></i> <strong>email:</strong>
+                                <a href="mailto:contact@playrexstudio.com">contact@playrexstudio.com</a>
+                            </p>
+                        </li>
+                        <li class="mb-2">
+                            <p>
+                                <i class="fa-solid fa-phone"></i> <strong>phone:</strong>
+                                <a>+92 348 4956762</a>
+                            </p>
+                        </li>
+                    </ul>
+                </div>
             </div>
         </div>
     </section>
@@ -155,14 +262,36 @@
     <!-- Footer -->
     <footer class="joysticks-bg text-white py-5">
         <div class="container">
-            <p>&copy; 2025 Playrex Studio. All rights reserved.</p>
+            <div class="row">
+                <div class="col-md-6">
+                    <p>&copy; 2025 Playrex Studio. All rights reserved.</p>
+                </div>
+                <div class="col-md-6 text-md-end">
+                    <a href="privacy-policy.html" class="text-white me-3">Privacy Policy</a>
+                </div>
+            </div>
         </div>
     </footer>
 
-    <!-- JS -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
-    <script src="assets/js/contact-form.js"></script>
+    <!--Contact Form Validation Script -->
+    <script>
+        (function () {
+            const form = document.getElementById('contactForm');
+            form.addEventListener('submit', function (event) {
+                if (!form.checkValidity()) {
+                    event.preventDefault();
+                    event.stopPropagation();
+                }
+                form.classList.add('was-validated');
+            }, false);
+        })();
+    </script>
 
+    <!-- Bootstrap 5 JS Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Flickity JS -->
+    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
 </body>
+
 </html>

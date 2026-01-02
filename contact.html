@@ -6,49 +6,35 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Playrex Studio - Contact Us</title>
     <link rel="icon" type="image/x-icon" href="assets/images/playrex-favicon.ico">
-
     <!-- Bootstrap 5 CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-
     <!-- Roboto Font -->
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
-
     <!-- FontAwesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
-
     <!-- Custom CSS -->
     <link href="assets/css/style.css" rel="stylesheet">
-
-    <!-- Google reCAPTCHA -->
-    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
 </head>
 
 <body>
-
     <!-- Navigation Bar -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark joysticks-bg">
         <div class="container">
+            <!-- Logo on left -->
             <a class="navbar-brand" href="index.html">
                 <img src="assets/images/logo.png" alt="PLAYREX STUDIO" height="75">
             </a>
         </div>
     </nav>
 
-    <!-- Contact Section -->
+    <!-- Contact Form -->
     <div class="container py-5">
         <div class="row g-5">
-
-            <!-- Contact Form -->
+            <!-- Left side: Contact Form -->
             <div class="col-md-6">
                 <h2 class="mb-4">Get in touch!</h2>
-
-                <form id="contactForm"
-                      class="needs-validation"
-                      action="https://formsubmit.co/c07f078369e9a9798f7c88806c2e66af"
-                      method="POST"
-                      novalidate>
-
-                    <!-- FormSubmit config -->
+                <form id="contactForm" class="needs-validation" action="https://formsubmit.co/c07f078369e9a9798f7c88806c2e66af"
+                    method="POST" novalidate>
                     <input type="hidden" name="_captcha" value="false">
                     <input type="text" name="_honey" style="display:none">
 
@@ -59,66 +45,53 @@
                     </div>
 
                     <div class="form-floating mb-3">
-                        <input type="email" class="form-control" id="email" name="email" placeholder="Your Email" required>
+                        <input type="email" class="form-control" id="email" name="email" placeholder="Your Email"
+                            required>
                         <label for="email">Email</label>
-                        <div class="invalid-feedback">Please enter a valid email.</div>
+                        <div class="invalid-feedback">Please enter a valid email address.</div>
                     </div>
 
                     <div class="form-floating mb-3">
-                        <input type="text" class="form-control" id="subject" name="subject" placeholder="Subject" required>
+                        <input type="text" class="form-control" id="subject" name="subject" placeholder="Subject"
+                            required>
                         <label for="subject">Subject</label>
                         <div class="invalid-feedback">Please enter a subject.</div>
                     </div>
 
                     <div class="form-floating mb-3">
-                        <textarea class="form-control"
-                                  id="message"
-                                  name="message"
-                                  placeholder="Message"
-                                  style="height: 245px; resize: none;"
-                                  required></textarea>
+                        <textarea class="form-control" id="message" name="message" placeholder="Your Message"
+                            style="height: 245px; resize: none;" required></textarea>
                         <label for="message">Message</label>
                         <div class="invalid-feedback">Please enter your message.</div>
                     </div>
 
-                    <!-- Google reCAPTCHA -->
-                    <div class="mb-3">
-                        <div class="g-recaptcha" data-sitekey="6LevzT0sAAAAAPVOrQdpjlOQVZ02XYp0oFiaLClF"></div>
-                    </div>
-
-                    <button type="submit"
-                            class="btn fw-bold w-100"
-                            style="background-color: #f7d208; color: black;">
-                        Send
-                    </button>
+                    <button type="submit" class="btn fw-bold w-100"
+                        style="background-color: #f7d208; color: black;">Send</button>
                 </form>
+
             </div>
 
-            <!-- Info Section -->
+            <!-- Right side: Heading and text aligned to top -->
             <div class="col-md-6">
                 <h3 class="mb-3">We'd Love to Hear From You</h3>
-                <p class="lead">
-                    Have questions or feedback? Fill out the form and we'll get back to you as soon as possible.
-                </p>
+                <p class="lead">Have questions or feedback? Fill out the form and we’ll get back to you as soon as
+                    possible. We’re here to help!</p>
 
                 <ul class="list-unstyled">
                     <li class="mb-2">
                         <p>
-                            <i class="fa-solid fa-envelope"></i>
-                            <strong>Email:</strong>
+                            <i class="fa-solid fa-envelope"></i> <strong>email:</strong>
                             <a href="mailto:contact@playrexstudio.com">contact@playrexstudio.com</a>
                         </p>
                     </li>
                     <li class="mb-2">
                         <p>
-                            <i class="fa-solid fa-phone"></i>
-                            <strong>Phone:</strong>
-                            +92 348 4956762
+                            <i class="fa-solid fa-phone"></i> <strong>phone:</strong>
+                            <a>+92 348 4956762</a>
                         </p>
                     </li>
                 </ul>
             </div>
-
         </div>
     </div>
 
@@ -130,17 +103,28 @@
                     <p>&copy; 2025 Playrex Studio. All rights reserved.</p>
                 </div>
                 <div class="col-md-6 text-md-end">
-                    <a href="privacy-policy.html" class="text-white">Privacy Policy</a>
+                    <a href="privacy-policy.html" class="text-white me-3">Privacy Policy</a>
                 </div>
             </div>
         </div>
     </footer>
 
-    <!-- Bootstrap JS -->
+    <!-- Contact Form Validation Script -->
+    <script>
+        (function () {
+            const form = document.getElementById('contactForm');
+            form.addEventListener('submit', function (event) {
+                if (!form.checkValidity()) {
+                    event.preventDefault();
+                    event.stopPropagation();
+                }
+                form.classList.add('was-validated');
+            }, false);
+        })();
+    </script>
+
+    <!-- Bootstrap 5 JS Bundle with Popper -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-
-    <!-- Contact Form Logic -->
-    <script src="assets/js/contact-form.js"></script>
-
 </body>
+
 </html>
