@@ -149,7 +149,8 @@ xandr.com, 17779, RESELLER
 zetaglobal.net, 630, RESELLER
 zmaticoo.com, 5135195, RESELLER
 
-# region: bigo-ads (updated on May 1, 2026)
+# region: bigo-ads (updated on May 16, 2026)
+pubmatic.com, 167981, RESELLER, 5d62403b186f2ace
 inmobi.com, 23d316d3d980453d8ea0dcf9caec4078, RESELLER, 83e75a7ae333ca9d
 mindtos.com,mt0b219ff842ee3772, RESELLER
 pubmatic.com, 163754, RESELLER, 5d62403b186f2ace
