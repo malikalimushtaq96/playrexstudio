@@ -193,7 +193,30 @@ xandr.com, 17779, RESELLER
 zetaglobal.net, 630, RESELLER
 zmaticoo.com, 5135195, RESELLER
 
-# region: bigo-ads (updated on July 07, 2026)
+# region: bigo-ads (updated on August 01, 2026)
+risecodes.com, 669e6c7df95c1e00017cf2c5, RESELLER
+richaudience.com, aGixKCw4qJ, RESELLER
+risecodes.com, 6a32507234030900017ca985, RESELLER
+firstimpression.io,5003,reseller
+pubmatic.com, 168196, RESELLER, 5d62403b186f2ace
+indexexchange.com, 216592, RESELLER, 50b1c356f2c5c8fc
+triplelift.com, 14809, RESELLER, 6c33edb13117fd86
+richaudience.com, h44H1yPBlk, RESELLER
+video.unrulymedia.com, 469734233, RESELLER
+lijit.com, 257618, RESELLER, fafdf38b16bf6b2b
+appnexus.com, 3695, RESELLER, f5ab79cb980f11d1
+app-stock.com, 982441, RESELLER
+osgdigital.net, 100252, RESELLER
+display.io, 242843, RESELLER
+sovrn.com, 400766, RESELLER, fafdf38b16bf6b2b
+peak226.com, 12900, RESELLER
+pubmatic.com, 167346, RESELLER, 5d62403b186f2ace
+dauup.com, 34109, RESELLER
+adgrid.io, 33342, RESELLER
+gitberry.com, 615100015, RESELLER
+conversantmedia.com, 42094, RESELLER, 03113cd04947736d
+ignitemediatech.com, pub_11130, RESELLER
+pubmatic.com, 158753, RESELLER
 triplelift.com, 14819, RESELLER, 6c33edb13117fd86
 triplelift.com, 14819-EB, RESELLER, 6c33edb13117fd86
 programmaticx.ai, 100682, DIRECT, b42d42eb28400efa
