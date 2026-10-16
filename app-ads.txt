@@ -193,7 +193,24 @@ xandr.com, 17779, RESELLER
 zetaglobal.net, 630, RESELLER
 zmaticoo.com, 5135195, RESELLER
 
-# region: bigo-ads (updated on Sept 25, 2026)
+# region: bigo-ads (updated on Oct 15, 2026)
+omni-dex.io, 100108, RESELLER
+insticator.com, 4022291c-df72-416d-98ba-ab42fb0696d3, RESELLER, b3511ffcafb23a32
+yieldmo.com, 4159765376676077684, RESELLER
+adingo.jp, 31595, RESELLER
+pubnative.net, 1018308, RESELLER, d641df8625486a7b
+smaato.com, 1100060477, RESELLER, 07bcf65f187117b4
+smaato.com, 1100060475, RESELLER, 07bcf65f187117b4
+risecodes.com, 6a952bfdeb73a000010a2f63, RESELLER
+taurusx.com, 80657, RESELLER
+bid-matrix.com, d576e3be59319075, RESELLER
+adorphic.com, 4067, RESELLER
+vistars.ai, d7njl5dbhjes73cnd8tg, RESELLER
+gravite.net, c6f2f6708dc1f6e2ae1165c0a861b3b0, RESELLER
+openx.com, 564879531, RESELLER, 6a698e2ec38604c6
+conversantmedia.com, 101349, RESELLER, 03113cd04947736d
+krushmedia.com, AJxF6R719a9M6CaTvK, RESELLER
+insticator.com, e2d3e33c-9911-477a-8ae2-f059870c67c0, RESELLER, b3511ffcafb23a32
 bigo.sg,23174789,DIRECT
 bigo.sg, q9hk29ki8d, RESELLER
 Trustedstack.com, TSP4UUFB8, RESELLER
